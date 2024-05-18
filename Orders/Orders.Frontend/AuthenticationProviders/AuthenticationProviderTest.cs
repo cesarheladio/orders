@@ -19,7 +19,7 @@ namespace Orders.Frontend.AuthenticationProviders
     },
 authenticationType: "test");
 
-            return await Task.FromResult(new AuthenticationState(new ClaimsPrincipal(anonimous)));
+            return await Task.FromResult(new AuthenticationState(new ClaimsPrincipal(admin)));
 
         }
     }
