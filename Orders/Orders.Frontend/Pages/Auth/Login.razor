@@ -1,9 +1,16 @@
 ﻿@page "/Login"
 
-<h3>Iniciar Sesión</h3>
 
 <EditForm Model="loginDTO" OnValidSubmit="LoginAsync">
     <DataAnnotationsValidator />
+      <div class="card bg-light">
+                <div class="card-header justify-content-center">
+                    <span>
+                        <i class="bi bi-box-arrow-in-left" /> Iniciar Sesión
+                        <button class="btn btn-sm btn-primary float-end" type="submit"><i class="bi bi-box-arrow-in-right" /> Iniciar Sesión</button>
+                    </span>
+                </div>
+                <div class="card-body">
 
     <div class="row">
         <div class="col-4">
@@ -24,4 +31,7 @@
             <button class="btn btn-primary" type="submit">Iniciar Sesión</button>
         </div>
     </div>
+       </div>
+</div>
+
 </EditForm>
